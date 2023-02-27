@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "aniworld-dl"
+version = "0.1.0"
+description = ""
+authors = ["Simon FD <chevignon93@gmail.com>"]
+readme = "README.md"
+packages = [{include = "aniworld_dl"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.2"
+parsel = "^1.7.0"
+pony = "^0.7.16"
+selenium = "^4.8.2"
+webdriver-manager = "^3.8.5"
+shtab = "^1.5.8"
+httpie = "^3.2.1"
+pyyaml = "^6.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+pre-commit = "^3.1.0"
+mypy = "^1.0.1"
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
